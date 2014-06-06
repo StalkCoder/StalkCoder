@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StalkCoder</title>
+    <link rel="stylesheet" type="text/css" href="demo.css"><!-- doesn't work don't know why -->
+    <link rel="stylesheet" type="text/css" href="stalk.css">
+    <link rel="stylesheet" type="text/css" href="styledemo.css">
+    <!--<link rel="stylesheet" type="text/css" href="styledemos.css">-->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="styledemo.css">
+    <link rel="stylesheet" href="jqueryui.css">
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  <body>
+
+    <div id="heading">StalkCoder</div>
+
+    <div id="usern">
+      <center><span class="headings">Step 1 of 2</span></center><br>
+      <center><label class="instruction">Enter your CodeChef handle</label></center>
+      <br><center><input type="text" id="in"><br><br><span id="validatehandle_1"></span><br><button id="store" class="sexybuttons">Enter</button></center>
+    </div>
+
+    <div id="contest">
+      <center><span class="headings">Step 2 of 2</span></center><br>
+      <center><label class="instruction">Enter the CodeChef contest name</label></center>
+      <br><center>
+      <div class="ui-widget">
+          <input id="tags">
+      </div><br>
+      <span id="validatecontest_1"></span><br><button id="getcon" class="sexybuttons">Go!</button></center>
+    </div>
+
+    <div id="info" class = "common">
+
+      <div id="myuser" class="left">
+        <span id="user" class="user_info"></span>
+        <a id="edit" href="javascript:void(0)" class="edit_info">edit</a><br><br><span id="validateuser_1"></span><br>
+        
+      </div>
+
+      <div id="change" class="left">
+        <input type="text" style="width:85px;" id="user_edit"><a href="javascript:void(0)" id="ed"> change</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <div id="myuser_right" class="right">
+        <span class="user_info"></span><br>
+        <!--<label>Choose Contest</label>-->
+        <div class="ui-widget">
+          <label for="tags1" class="small">Change Contest: </label>
+          <input id="tags1" style="width:75px" class="contest_change">
+          <a id="choose" href="javascript:void(0)" class="edit_info">change</a><br>
+          <span id="validatecontest_2"></span>
+          <br>
+        </div>
+        <!--<select id="displaycontests"></select>
+        <a id="choose" href="javascript:void(0)" class="edit_info">change</a>-->
+      </div>
+
+    </div>
+
+    <div id="inp">
+      <label>Enter the CodeChef handle of the person whom you want to stalk</label>
+      <br><input type="text" id="input"><button id="submit">Stalk</button>
+      <span id="validatehandle_2"></span>
+    </div>
+    <div id="choice">
+      <div id="challenge"></div>
+      <div id="remove"></div>
+    </div>
+
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Active Users</a></li>
+        <li><a href="#tabs-2">Inactive Users</a></li>
+      </ul>
+      <div id="tabs-1">
+        <center><div id="probdiv" class="tables"></div></center>
+      </div>
+      <div id="tabs-2">
+        <center><div id="inprobdiv" class="tables"></div></center>
+      </div>
+    </div>
+
+    <!--<script>
+    $(function() {
+      $( "#tabs" ).tabs();
+    });
+    </script>-->
+      <!--<div id="tableData"></div>-->
+      <div id="target" class="loading"></div>
+  <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="loading-overlay.min.js"></script>
+  <script src="stalk.js"></script>
+  </body>
+</html>
