@@ -207,7 +207,6 @@ function getData(idata) {
 			new_data += '<tr style="background-color: rgba(56,121,153, 0.5);"><td>'+ j + '</td><td class="user_inactive"><a href="http://www.codechef.com/users/'+ranks[i][0]+'/" target="_blank">' + ranks[i][0] + '</td><td>' + ranks[i][1] + '</td><td>' + ranks[i][2] + '</td><td><a id="' +ranks[i][0]+ '" href="javascript:void(0)" style="text-decoration:none;color:red;" class = "close">x</a></td></tr>'; 
 			userrank = j;
 			flag = true;
-			console.log("This should work");
 			j = j + 1;
 		}
 		else if (j%2 == 0) {
