@@ -195,8 +195,7 @@ function getData(idata) {
 			inactive.push(i);
 		}
 	}
-	ranks.sort(function(a, b) {return a[1]>b[1] || (a[1]==b[1] && a[0]<b[0])});
-	
+	ranks.sort(function(a, b) {return a[1] - b[1]});
 
 	var new_data = '<table style="width:100%; border-collapse: collapse; margin-left: 0px;text-align: center; vertical-align: middle;"><tr style="background-color: rgba(171,226,246, .5);"><th>Rank</th><th>Username</th><th>Score</th><th>Curr Rank</th><th>Rem</th></tr>';
 	var j = 1;
