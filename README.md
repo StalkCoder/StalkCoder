@@ -9,3 +9,8 @@ This extension allows you to:
 * See your rank among your friends
 * See who all are actively participating and who all are inactive
 * See your current global rank in the contest
+
+
+##Contributions
+
+* [Kartik Singhal](https://github.com/ka4tik) added autocomplete feature for handle.
