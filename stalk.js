@@ -326,3 +326,22 @@ function getContests(division, data) {
 		});	
 	});
 }
+
+$("#in").autocomplete({
+    source: function (request, response) {
+        $.getJSON("http://www.codechef.com/submission/autocomplete/handle?term=" + request.term, function (data) {
+            response(data.slice(0, 5));
+        });
+    },
+    minLength: 1,
+    delay: 100
+});
+$("#input").autocomplete({
+    source: function (request, response) {
+        $.getJSON("http://www.codechef.com/submission/autocomplete/handle?term=" + request.term, function (data) {
+            response(data.slice(0, 5));
+        });
+    },
+    minLength: 1,
+    delay: 100
+});
