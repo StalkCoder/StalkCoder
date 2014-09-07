@@ -50,7 +50,7 @@ sub.addEventListener(
 		var span1=document.getElementById('validatehandle_2');
 		if (validateRegEx(/^[A-z]{1}[A-z0-9_]{3,13}$/, inp) && inp != "") {
 			storenames(inp);
-			span1.innerHTML='';
+			// span1.innerHTML='';
 			document.getElementById("input").value='';
 			getData(idata);
 		}
@@ -163,12 +163,13 @@ function storenames(inp) {
 	}
 	else {
 		names = JSON.parse(localStorage.getItem('data'));
+		var span1 = document.getElementById('validatehandle_2');
 		if (names.indexOf(inp) > -1) {
-			var span1 = document.getElementById('validatehandle_2');
 			span1.innerHTML = "User exists";
 		}
 		else {
 			names.push(inp);
+			span1.innerHTML = "";	
 			localStorage.setItem('data', JSON.stringify(names));
 		}
 	}

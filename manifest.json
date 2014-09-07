@@ -1,6 +1,5 @@
 {
    "browser_action": {
-      "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
       "default_icon": "icon.png",
       "default_popup": "stalker.html",
       "default_title": "StalkCoder"
@@ -10,11 +9,9 @@
       "128": "icon_128x128.png",
       "48": "icon_48x48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlWLdOP56wgVTUALqvAQrzUHeYKCLQ0xtcxQstRUpckexrRL6MRBT915y+iAPm/ef+eCP24QBA3nsfMT7OWV+QxCR0O9BY0Uej+f4r4iIlloMpxk8QhKjwBQVZFS+fusiT93OlglrU7u1X4ctK4HJufVj5Bktg7Ec7TMlAUXyA78WsGkGOnR3sWvvk3KiIdw4Pl8ghbvSZ8f8S2srj1iKOH+LsWtdL2ATOIoELcl1+REWLEh6ruOzwsGy+lWn9Bjvs2+6sAGYf9FPFmOAbVdfEpcd5G6pFBn7pHY6CUYGycxiDw7ZPh3Frv8Q29MKqbBI6t8c7u+1feR7LOBKJ7UU6QIDAQAB",
    "manifest_version": 2,
    "name": "Stalkcoder",
    "permissions": [ "*://stalk-coder.appspot.com/*", "*://www.codechef.com/*" ],
    "short_name": "stalkcoder",
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.5.1"
 }
